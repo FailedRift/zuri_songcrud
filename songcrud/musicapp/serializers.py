@@ -1,8 +1,8 @@
 from django.db.models import fields
 from rest_framework import serializers
-from .models import Artiste
+from musicapp.models import Artiste
 
 class ArtisteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Artiste
-        fields = ('first_name', 'last_name', 'age')
+        fields = "__all__"
